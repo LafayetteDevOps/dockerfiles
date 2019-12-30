@@ -1,0 +1,6 @@
+FROM fedora:latest
+label maintainer=<Chris.Bachmeyer@sncorp.com>
+
+RUN dnf update -y
+RUN dnf install -y procps-ng-3.3.15 iproute
+RUN dnf install -y ansible
